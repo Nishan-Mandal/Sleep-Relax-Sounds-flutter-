@@ -9,6 +9,8 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+AudioPlayer audioPlayer = AudioPlayer();
+
 class _MyHomePageState extends State<MyHomePage> {
   pushToPlayerPage(String music, String backgroundimage) {
     Navigator.push(
@@ -17,6 +19,21 @@ class _MyHomePageState extends State<MyHomePage> {
           builder: (context) => player(music, backgroundimage),
         ));
   }
+
+// https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+  // play() async {
+  //   int result = await audioPlayer.play(
+  //       'https://firebasestorage.googleapis.com/v0/b/bbold-6f546.appspot.com/o/farm.mp3?alt=media&token=29eb6c9c-e927-4f29-bfd0-2e90f10e67ab');
+  //   if (result == 1) {
+  //     // success
+  //   }
+  // }
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   play();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -71,19 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 image: AssetImage("stars.jpg"), fit: BoxFit.cover)),
         child: Column(
           children: [
-            // Container(
-            //     color: Colors.black,
-            //     alignment: Alignment.center,
-            //     height: 100,
-            //     width: screen.width,
-            //     child: Text(
-            //       "Sleep Sounds",
-            //       style: TextStyle(
-            //         color: Colors.cyan,
-            //         fontSize: 30,
-            //         fontWeight: FontWeight.bold,
-            //       ),
-            //     )),
             SizedBox(height: 30),
             Flexible(
               child: SingleChildScrollView(
@@ -426,7 +430,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    "Air travel",
+                                    "wind",
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20),
                                   ),
@@ -496,6 +500,215 @@ class _MyHomePageState extends State<MyHomePage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
                                     "Drip",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "birds.mp3", "birds.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("birds.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Birds",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () => pushToPlayerPage(
+                                      "crowd.mp3", "crowd.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("crowd.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Crowd",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "flute.mp3", "flute.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("flute.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Flute",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () => pushToPlayerPage(
+                                      "heartbeat.mp3", "heartbeat.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("heartbeat.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Heartbeat",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "rain-on-window.mp3",
+                                        "rain-on-window.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "rain-on-window.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Rain on Window",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 19),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () =>
+                                      pushToPlayerPage("wolf.mp3", "wolf.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("wolf.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Wolf",
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20),
                                   ),

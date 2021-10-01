@@ -21,7 +21,7 @@ class _addMoreState extends State<addMore> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Sleep Relax Sounds",
+              "Sleep Sounds",
               style: TextStyle(
                 color: Colors.orange[600],
                 fontSize: 25,
@@ -384,7 +384,7 @@ class _addMoreState extends State<addMore> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    "Air travel",
+                                    "Wind",
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20),
                                   ),
@@ -454,6 +454,215 @@ class _addMoreState extends State<addMore> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
                                     "Drip",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "birds.mp3", "birds.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("birds.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Birds",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () => pushToPlayerPage(
+                                      "crowd.mp3", "crowd.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("crowd.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Crowd",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "flute.mp3", "flute.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage("flute.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Flute",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () => pushToPlayerPage(
+                                      "heartbeat.mp3", "heartbeat.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("heartbeat.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Heartbeat",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8, right: 8),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () => pushToPlayerPage(
+                                        "rain-on-window.mp3",
+                                        "rain-on-window.jpg"),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "rain-on-window.jpg"),
+                                              fit: BoxFit.cover),
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(20)),
+                                      height: screen.width / 2.3,
+                                      width: screen.width / 2.3,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Rain on Window",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () =>
+                                      pushToPlayerPage("wolf.mp3", "wolf.jpg"),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage("wolf.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    height: screen.width / 2.3,
+                                    width: screen.width / 2.3,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "Wolf",
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20),
                                   ),

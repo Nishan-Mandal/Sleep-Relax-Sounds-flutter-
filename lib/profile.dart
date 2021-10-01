@@ -115,7 +115,7 @@ class _profileState extends State<profile> {
                     onTap: () {
                       if (ratingStars > 2) {
                         StoreRedirect.redirect(
-                          androidAppId: "com.iyaffle.rangoli",
+                          androidAppId: "com.ultimateRocker.sleepsound2021",
                         );
                         Navigator.pop(context);
                       } else {
@@ -174,24 +174,6 @@ class _profileState extends State<profile> {
                 SizedBox(
                   height: 100,
                 ),
-                // Container(
-                //   width: double.infinity,
-                //   padding: EdgeInsets.all(20),
-                //   color: Colors.cyan,
-                //   child: Column(
-                //     children: [
-                //       Container(
-                //         margin: EdgeInsets.only(top: 20),
-                //         width: 120,
-                //         height: 200,
-                //         decoration: BoxDecoration(
-                //             shape: BoxShape.circle,
-                //             image: DecorationImage(
-                //                 image: AssetImage('stars.jpg'), fit: BoxFit.fill)),
-                //       ),
-                //     ],
-                //   ),
-                // ),
                 Divider(
                   color: Colors.grey,
                   height: 0,

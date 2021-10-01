@@ -170,7 +170,6 @@ class _playerState extends State<player> with TickerProviderStateMixin {
             fit: BoxFit.cover,
           )),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
                 height: 20,
@@ -182,10 +181,7 @@ class _playerState extends State<player> with TickerProviderStateMixin {
                     animate: isMusicPlaying,
                     endRadius: 160,
                     child: GestureDetector(
-                      onTap: () {
-                        // move();
-                        // timer.cancel();
-                      },
+                      onTap: () {},
                       child: !isUsingTimer
                           ? GestureDetector(
                               onTap: () => bottomsheet(),
@@ -222,10 +218,8 @@ class _playerState extends State<player> with TickerProviderStateMixin {
                                 ),
                                 GestureDetector(
                                   onTap: () {
-                                    // if (controller.isDismissed) {
                                     controller.stop();
                                     bottomsheet();
-                                    // }
                                   },
                                   child: AnimatedBuilder(
                                     animation: controller,
